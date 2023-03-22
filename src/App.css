@@ -1,38 +1,125 @@
+html {
+  margin: 0;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+h1 {
+  margin: 0 auto;
+}
+canvas {
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+button {
+  position: relative;
+}
+
+#searchResults {
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.None {
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
   display: flex;
-  flex-direction: column;
+  font-size: 100px;
+  font-family: Monofett;
+  align-self: center;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 200px;
+  background: rgb(223, 221, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 221, 126, 0.8785889355742297) 0%,
+    rgba(220, 242, 20, 1) 38%,
+    rgba(85, 141, 184, 1) 100%
+  );
+  color: #5973bd;
+  flex-flow: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.head-links {
+  width: 200%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  -webkit-text-emphasis-style: triangle;
+  text-emphasis-style: triangle;
+  font-family: Monofett;
+  font-size: 24px;
+  margin: 0 auto;
+  align-self: flex-end;
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+main {
+  background-image: url("./images/small-memory-medium.gif");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.foot {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.quota {
+  margin: 4%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
+}
+.answer {
+  margin: 4%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
+}
+
+.Summary {
+  position: relative;
+  margin: 4%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
+}
+
+@media (max-width: 700px) {
+  .head-links {
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    -webkit-text-emphasis-style: triangle;
+    text-emphasis-style: triangle;
+    font-family: Monofett;
+    font-size: 16px;
+    margin: 0 auto;
+    align-self: flex-end;
+    padding: 15px;
   }
 }
+
