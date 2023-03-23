@@ -10,7 +10,7 @@ export default function Container() {
       <Routes>
         <Route path="/" />
         {/* for home page path is always '/', element is not always needed */}
-        <Route path="/ranydom" element={<Random />} />
+        <Route path="/random" element={<Random />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/search" element={<Search />} />
         <Route path="*" element={<NotFound />} />
